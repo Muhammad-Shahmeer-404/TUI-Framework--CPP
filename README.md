@@ -18,8 +18,11 @@ A lightweight, double-buffered Terminal User Interface (TUI) framework built fro
 
 # Project Structure
 **Core/**  -Windows, Widget, Box, Button, Text, VertialLayout, HorizontalLayout, Container
+
 **Terminal/** -Input (Raw mode, Terminal Control)
+
 **main.cpp** -A demo of a file browser using the framework
+
 **Makefile** -Build System
 
 # How to build
