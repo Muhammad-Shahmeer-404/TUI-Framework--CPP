@@ -75,10 +75,14 @@ string checkFile(int focusedIndex, string file[], bool isDir[])
     }
 }
 
-int main()
+int main(int argc, char* argv[])
 {
+    if (argc <= 1){
+        cout << "Please provided directory to start from." << endl;
+        return 0;
+    }
+    string path = argv[1];
     char c = '\0';
-    string path = "/home/shahmeer/Desktop/UniWork/OPP_Theory";
     string instructionString = "j/k move | Enter open | b back | q quit";
 
     ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
